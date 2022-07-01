@@ -1,0 +1,116 @@
+:root {
+    --clr-pink: rgba(234, 84, 84, 1);
+    --clr-green: rgba(68, 211, 210, 1);
+    --clr-yellow: rgba(252, 174, 74, 1);
+    --clr-blue: rgba(84, 158, 242, 1);
+    --clr-gray: rgba(77, 79, 98, 1);
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 0.9375rem;
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--clr-gray);
+    letter-spacing: .1px;
+}
+
+main {
+    max-width: 1440px;
+    margin: 80px auto;
+}
+
+.description {
+    max-width: 540px;
+    text-align: center;
+    margin: 0 auto 64px;
+}
+
+.description > h1 {
+    font-weight: 200;
+    font-size: 2.25rem;
+    line-height: 1.5;
+    letter-spacing: .25px;
+}
+
+.description > h2 {
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 1.5;
+    letter-spacing: .25px;
+}
+
+.description > p {
+    opacity: .5;
+    margin-top: 16px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 8px;
+    padding: 32px;
+    border-top: 4px solid;
+}
+
+.green {
+    border-color: var(--clr-green);
+}
+
+.pink {
+    border-color: var(--clr-pink);
+}
+
+.yellow {
+    border-color: var(--clr-yellow);
+}
+
+.blue {
+    border-color: var(--clr-blue);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.card-description {
+    margin: 6px 0 40px;
+    opacity: .5;
+}
+
+.card-image {
+    display: block;
+    margin-left: auto;
+}
+
+.cards-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+        .description {
+            max-width: 100%;
+        }
+
+        .cards {
+            flex-direction: column;
+        }
+}
